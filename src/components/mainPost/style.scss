@@ -1,0 +1,79 @@
+.main-post {
+  height: 773px;
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  &__information {
+    height: inherit;
+    padding-left: 159px;
+    width: 56%;
+    
+    &__title {
+      display: flex;
+      height: 130px;
+      font-size: 50px;
+      line-height: 60px;
+      color: #534847;
+      margin-top: 0px;
+      font-weight: 600;
+      letter-spacing: 0px;
+
+      &--yellow{
+        color:#E2B84C;
+      }
+    }    
+
+    &__description {
+      margin-left: 12px;
+      font-size: 16px;
+      line-height: 24px;
+      width: 428px;
+      height: 120px;
+      color: #8d8180;
+      
+      &--yellow{
+        color:#E2B84C;
+        cursor: pointer;
+      }
+    }
+      &__description-extend {
+        margin-left: 12px;
+        font-size: 16px;
+        line-height: 24px;
+        width: 428px;
+        height: 120px;
+        color:#E2B84C;
+        display: flex;
+
+      &__line{
+        width: 25px;
+        height: 1px;
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+        background-color: #E2B84C;
+      }
+
+      }
+    }
+
+  &__image {
+    width: 46%;
+    border-top-left-radius: 25px;
+    background-image: url('../../assets/images/construct.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -335px;
+    overflow: hidden;
+  }
+  &__button {
+    position: absolute;
+    right:0;
+    top: 688px;
+    background-color: white;
+    padding:  30px 125px 30px 95px;
+    color: black;
+    font-size: 16px;
+  }
+}

@@ -9,7 +9,6 @@ export function Navbar() {
 
   return (
     <div className='navbar'>
-      <div className='navbar__right'>
         <ul>
           <li>{HOME}</li>
           <li>{ABOUT}</li>
@@ -17,7 +16,6 @@ export function Navbar() {
           <li>{SERVICES}</li>
           <li className='quote'>{QUOTE}</li>
         </ul>
-        </div>
     </div>
   );
 }

@@ -1,13 +1,14 @@
 import './App.css';
-import { Construction } from './components/construction';
-import {Footer} from './components/footer';
-import {Navbar} from './components/navbar';
+
+import { Footer } from './components/footer';
+import { Navbar } from './components/navbar';
+import { MainPost } from './components/mainPost';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Construction />
+      <MainPost />
       <Footer />
     </>
   );
