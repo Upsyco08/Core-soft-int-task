@@ -29,8 +29,18 @@
       align-items: center;
       justify-content: space-between;
 
+      h3 {
+        font-family: 'Raleway';
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #534847;
+        width: 178px;
+      }
+
       p {
         text-align: center;
+        color: #8d8180;
       }
     }
   }
