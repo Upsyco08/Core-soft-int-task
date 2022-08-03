@@ -1,0 +1,41 @@
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 140px 0px;
+
+  .project {
+    position: relative;
+
+    &__title {
+      font-family: 'Raleway';
+      margin: 65px 0px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 35px;
+      color: #534847;
+    }
+
+    p {
+      position: absolute;
+      color: #534847;
+      background-color: #f9f9f9;
+      width: 82px;
+      font-family: 'Raleway';
+      font-size: 14px;
+      line-height: 15px;
+      font-weight: 700;
+      padding: 12px 56px 11px 11px;
+      bottom: 7px;
+      left: 0;
+    }
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
