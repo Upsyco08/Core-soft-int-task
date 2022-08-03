@@ -1,17 +1,59 @@
 .history-post{
+    position: relative;
+    margin: 200px 0px 0px 171px;
+
     &__title{
+        font-family: 'Raleway';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47px;
+    }
+    
+    &__support-text{ 
         width: 310px; 
-        color: #E2B84C;
-        text-align: right; 
-        border-bottom: 1px solid #E2B84C; 
-        line-height: 1px;
-        margin: 0px 0 20px 112px; 
         font-size: 16px;
+        color: #E2B84C;
         font-weight: 400;
+        line-height: 1px;
+        text-align: right; 
+        margin: 21px 0px 0px 0px; 
+        border-bottom: 1px solid #E2B84C; 
         
         span{
             background:#fff; 
             padding:0 12px; 
         }
+    }
+
+    &__description{
+        font-weight: 400;
+        size: 16px;
+        line-height: 24px;
+        &--upper{
+            margin: -43px 125px 25px 535px; 
+        }
+        &--lower{
+            margin: 25px 125px 15px 535px; 
+        }
+    }
+
+    &__author{ 
+        width: 112px; 
+        font-size: 16px;
+        color: #E2B84C;
+        font-weight: 400;
+        margin: 70px 151px 200px 1006px;
+    }
+
+    .small-circle{
+        position: absolute;
+        right:43px;
+        top:-104px;
+    }
+
+    .dots{
+        position: absolute;
+        left:-126px;
+        top:358px;
     }
 }
