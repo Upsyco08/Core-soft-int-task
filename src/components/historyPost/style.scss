@@ -25,16 +25,14 @@
         }
     }
 
-    &__description{
-        font-weight: 400;
-        size: 16px;
-        line-height: 24px;
-        &--upper{
-            margin: -43px 125px 25px 535px; 
-        }
-        &--lower{
-            margin: 25px 125px 15px 535px; 
-        }
+    &__description1{
+        margin: -43px 125px 25px 535px; 
+        color:#8D8180; 
+    }
+    
+    &__description2{
+        margin: 25px 125px 15px 535px; 
+        color:#8D8180; 
     }
 
     &__author{ 
@@ -42,7 +40,7 @@
         font-size: 16px;
         color: #E2B84C;
         font-weight: 400;
-        margin: 70px 151px 200px 1006px;
+        margin: 70px 151px 320px 1006px;
     }
 
     .small-circle{
