@@ -1,34 +1,40 @@
 import React from 'react';
 
-import dots from '../../assets/images/6x2 dots.png';
-import smallCircle from '../../assets/images/small circle.png';
+import { historyPosts } from '../../constants';
 
 import './style.scss';
 
 export function HistoryPost() {
+  const {
+    TITLE,
+    SUPPORT_TEXT,
+    DESCRIPTION1,
+    DESCRIPTION2,
+    AUTHOR,
+    DOTS_IMAGE,
+    DOTS_IMAGE_DESCRIPTION,
+    CIRCLE_IMAGE,
+    CIRCLE_IMAGE_DESCRIPTION,
+  } = historyPosts;
   return (
     <div className='history-post'>
       <div className='title'>
-        <h2>Since we Started work in 1900</h2>
+        <h2>{TITLE}</h2>
         <p className='title__support-text'>
-          <span>Quality design at the fairest price</span>
+          <span>{SUPPORT_TEXT}</span>
         </p>
       </div>
       <div className='description'>
-        <p>
-          We have worked on some of the stunning architectural marvels within
-          industries like hotels, residential buildings, offices, commercial
-          buildings, food & beverage and made them great successes.
-        </p>
-        <p>
-          We have worked on some of the stunning architectural marvels within
-          industries like hotels, residential buildings, offices, commercial
-          buildings, food & beverage and made them great successes.
-        </p>
-        <p className='description__author'>lorem ipsum</p>
+        <p>{DESCRIPTION1}</p>
+        <p>{DESCRIPTION2}</p>
+        <p className='description__author'>{AUTHOR}</p>
       </div>
-      <img className='small-circle' src={smallCircle} alt='circle-vector' />
-      <img className='dots' src={dots} alt='6x2 dots' />
+      <img
+        className='small-circle'
+        src={CIRCLE_IMAGE}
+        alt={CIRCLE_IMAGE_DESCRIPTION}
+      />
+      <img className='dots' src={DOTS_IMAGE} alt={DOTS_IMAGE_DESCRIPTION} />
     </div>
   );
 }

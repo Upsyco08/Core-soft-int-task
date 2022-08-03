@@ -1,11 +1,17 @@
 export const navbarLabel = {
-    HOME: 'Home',
-    ABOUT: 'About',
-    CONTACT: 'Contact',
-    SERVICES: 'Services',
-    QUOTE: 'Get A Quote'    
-}
+  HOME: 'Home',
+  ABOUT: 'About',
+  CONTACT: 'Contact',
+  SERVICES: 'Services',
+  QUOTE: 'Get A Quote',
+};
 
 export const footerTitle = {
-    CONTACT_US: 'Contact Us'
-}
+  ABOUT_COMPANY: 'About the company',
+  NEWSLETTER: 'Newsletter',
+  FOLLOW_US: 'Follow us',
+  ABOUT_DESCRIPTION:
+    'Buildmax Limited is a professional building, renovation and refurbishment company. We are part of the Nairobi-based Talisman Capital Group.',
+  OFFERS: 'Stay updated with our lates offers',
+  COPYRIGHT: '© BuildMax Limited | All Rights Reserved. | 2019',
+};

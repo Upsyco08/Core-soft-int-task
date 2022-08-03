@@ -1,32 +1,48 @@
 import React from 'react';
 
-import bigCircle from '../../assets/images/big circle.png';
-import dots from '../../assets/images/6x6 dots.png';
+import { mainPosts } from '../../constants/main';
 
 import './style.scss';
 
 export function MainPost() {
+  const {
+    TITLE_TEXT1,
+    TITLE_TEXT2,
+    TITLE_TEXT3,
+    TITLE_TEXT4,
+    DESCRIPTION,
+    ACTION,
+    MAIN_IMAGE,
+    MAIN_IMAGE_DESCRIPTION,
+    BUTTON_TEXT,
+    CIRCLE_IMAGE,
+    CIRCLE_DESCRIPTION,
+    DOTS_IMAGE,
+    DOTS_IMAGE_DESCRIPTION,
+  } = mainPosts;
   return (
     <div className='main-post'>
       <div className='information'>
-        <h1 className='information__title'>
-          The <span className='information__title--yellow'>construction</span>{' '}
-          kings
-        </h1>
-        <h1 className='information__title'>building up great things</h1>
-        <p className='information__description'>
-          Buildmax Limited is a professional building, renovation and
-          refurbishment company. We are part of the Nairobi-based Talisman
-          Capital Group.
-        </p>
+        <div className='information__title'>
+          <h1>
+            {TITLE_TEXT1}
+            <span>{TITLE_TEXT2}</span> {TITLE_TEXT3}
+          </h1>
+          <h1>{TITLE_TEXT4}</h1>
+        </div>
+        <p className='information__description'>{DESCRIPTION}</p>
         <div className='information__action'>
-          <span>Read more</span>
+          <span>{ACTION}</span>
         </div>
       </div>
-      <div className='main-post__image'></div>
-      <div className='main-post__button'>Our Projects ➔</div>
-      <img className='big-circle' src={bigCircle} alt='circle-vector' />
-      <img className='dots' src={dots} alt='6x6 dots' />
+      <img
+        className='main-post__image'
+        src={MAIN_IMAGE}
+        alt={MAIN_IMAGE_DESCRIPTION}
+      />
+      <div className='main-post__button'>{BUTTON_TEXT}</div>
+      <img className='big-circle' src={CIRCLE_IMAGE} alt={CIRCLE_DESCRIPTION} />
+      <img className='dots' src={DOTS_IMAGE} alt={DOTS_IMAGE_DESCRIPTION} />
     </div>
   );
 }
