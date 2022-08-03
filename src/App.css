@@ -1,5 +1,15 @@
-*{
-    font-family: 'Poppins';
-    margin: 0px;
-    padding: 0px;
+* {
+  font-family: 'Poppins';
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
 }

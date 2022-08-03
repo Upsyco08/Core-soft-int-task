@@ -4,15 +4,15 @@
   position: relative;
   display: flex;
 
-  &__information {
+  .information {
     height: inherit;
     padding-left: 159px;
     width: 56%;
-    
+
     &__title {
       display: flex;
       margin: 0px;
-      margin-left:12px;
+      margin-left: 12px;
       padding: 0px;
       height: 60px;
       font-size: 50px;
@@ -22,12 +22,12 @@
       font-weight: 600;
       letter-spacing: 0px;
 
-      &--yellow{
-        color:#E2B84C;
+      &--yellow {
+        color: #e2b84c;
         padding-left: 12px;
         padding-right: 12px;
       }
-    }    
+    }
 
     &__description {
       margin-left: 12px;
@@ -36,29 +36,30 @@
       width: 428px;
       height: 120px;
       color: #8d8180;
-      
-      &--yellow{
-        color:#E2B84C;
-        cursor: pointer;
-      }
-    }
-      &__description-extend {
-        margin-left: 12px;
-        font-size: 14px;
-        width: 112px;
-        color:#E2B84C;
-        line-height: 1px;
-        font-weight: 400;
-        border-bottom: 1px solid #E2B84C;
-        text-align:right;
-        cursor: pointer;
 
-        span{
-          background: #fff;
-          padding: 0 10px;
-        }
+      &--yellow {
+        color: #e2b84c;
+        cursor: pointer;
       }
     }
+
+    &__action {
+      margin-left: 12px;
+      font-size: 14px;
+      width: 112px;
+      color: #e2b84c;
+      line-height: 1px;
+      font-weight: 400;
+      border-bottom: 1px solid #e2b84c;
+      text-align: right;
+      cursor: pointer;
+
+      span {
+        background: #fff;
+        padding: 0 10px;
+      }
+    }
+  }
 
   &__image {
     width: 46%;
@@ -69,23 +70,26 @@
     background-position: -335px;
     overflow: hidden;
   }
+
   &__button {
     position: absolute;
-    right:0;
+    right: 0;
     top: 688px;
     background-color: white;
-    padding:  33px 125px 30px 95px;
+    padding: 33px 125px 30px 95px;
     color: black;
     font-size: 16px;
     font-weight: 600;
     font-size: 16px;
   }
-  .big-circle{
+
+  .big-circle {
     position: absolute;
     left: -51px;
-    top:39px;
+    top: 39px;
   }
-  .dots{
+
+  .dots {
     position: absolute;
     left: 20px;
     top: 526px;

@@ -5,6 +5,7 @@ import { Navbar } from './components/navbar';
 import { MainPost } from './components/mainPost';
 import { HistoryPost } from './components/historyPost';
 import { AboutPost } from './components/aboutPost';
+import { Services } from './components/services';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <MainPost />
       <HistoryPost />
       <AboutPost />
+      <Services />
       <Footer />
     </>
   );

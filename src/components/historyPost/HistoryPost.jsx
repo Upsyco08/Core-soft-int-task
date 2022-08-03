@@ -1,21 +1,34 @@
-import React from 'react'
+import React from 'react';
 
-import dots from "../../assets/images/6x2 dots.png"
-import smallCircle from "../../assets/images/small circle.png"
+import dots from '../../assets/images/6x2 dots.png';
+import smallCircle from '../../assets/images/small circle.png';
 
-import "./style.scss"
+import './style.scss';
 
 export function HistoryPost() {
   return (
     <div className='history-post'>
-        <h2 className='history-post__title'>Since we Started</h2>
-        <h2 className='history-post__title'>work in 1900</h2>
-        <p className='history-post__support-text'><span>Quality design at the fairest price</span></p>
-        <p className='history-post__description1'>We have worked on some of the stunning architectural marvels within industries like hotels, residential buildings, offices, commercial buildings, food & beverage and made them great successes.</p>
-        <p className='history-post__description2'>We have worked on some of the stunning architectural marvels within industries like hotels, residential buildings, offices, commercial buildings, food & beverage and made them great successes.</p>
-        <p className='history-post__author'>lorem ipsum</p>
-        <img className='small-circle' src={smallCircle} alt="circle-vector" />
-        <img className='dots' src={dots} alt="6x2 dots"/>
+      <div className='title'>
+        <h2>Since we Started work in 1900</h2>
+        <p className='title__support-text'>
+          <span>Quality design at the fairest price</span>
+        </p>
+      </div>
+      <div className='description'>
+        <p>
+          We have worked on some of the stunning architectural marvels within
+          industries like hotels, residential buildings, offices, commercial
+          buildings, food & beverage and made them great successes.
+        </p>
+        <p>
+          We have worked on some of the stunning architectural marvels within
+          industries like hotels, residential buildings, offices, commercial
+          buildings, food & beverage and made them great successes.
+        </p>
+        <p className='description__author'>lorem ipsum</p>
+      </div>
+      <img className='small-circle' src={smallCircle} alt='circle-vector' />
+      <img className='dots' src={dots} alt='6x2 dots' />
     </div>
-  )
+  );
 }

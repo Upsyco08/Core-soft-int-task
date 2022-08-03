@@ -1,57 +1,63 @@
-.history-post{
-    position: relative;
-    margin: 200px 0px 0px 171px;
+.history-post {
+  position: relative;
+  margin: 200px 170px;
+  display: flex;
+  justify-content: space-between;
 
-    &__title{
-        font-family: 'Raleway';
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 47px;
-    }
-    
-    &__support-text{ 
-        width: 310px; 
-        font-size: 16px;
-        color: #E2B84C;
-        font-weight: 400;
-        line-height: 1px;
-        text-align: right; 
-        margin: 21px 0px 0px 0px; 
-        border-bottom: 1px solid #E2B84C; 
-        
-        span{
-            background:#fff; 
-            padding:0 12px; 
-        }
+  .title {
+    width: 340px;
+    h2 {
+      font-family: 'Raleway';
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 47px;
     }
 
-    &__description1{
-        margin: -43px 125px 25px 535px; 
-        color:#8D8180; 
+    &__support-text {
+      width: 310px;
+      font-size: 16px;
+      color: #e2b84c;
+      font-weight: 400;
+      line-height: 1px;
+      text-align: right;
+      margin: 21px 0px 0px 0px;
+      border-bottom: 1px solid #e2b84c;
+
+      span {
+        background: #fff;
+        padding: 0 12px;
+      }
     }
-    
-    &__description2{
-        margin: 25px 125px 15px 535px; 
-        color:#8D8180; 
+  }
+
+  .description {
+    color: #8d8180;
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0px;
+    p {
+      padding: 35px 0px;
     }
 
-    &__author{ 
-        width: 112px; 
-        font-size: 16px;
-        color: #E2B84C;
-        font-weight: 400;
-        margin: 70px 151px 320px 1006px;
+    &__author {
+      align-self: flex-end;
+      width: 112px;
+      font-size: 16px;
+      color: #e2b84c;
+      font-weight: 400;
     }
+  }
 
-    .small-circle{
-        position: absolute;
-        right:43px;
-        top:-104px;
-    }
+  .small-circle {
+    position: absolute;
+    right: -110px;
+    top: -104px;
+  }
 
-    .dots{
-        position: absolute;
-        left:-126px;
-        top:358px;
-    }
+  .dots {
+    position: absolute;
+    left: -126px;
+    top: 358px;
+  }
 }
