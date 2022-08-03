@@ -7,6 +7,7 @@ import { HistoryPost } from './components/historyPost';
 import { AboutPost } from './components/aboutPost';
 import { Services } from './components/services';
 import { Projects } from './components/projects';
+import { Gallery } from './components/gallery/Gallery';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <AboutPost />
       <Services />
       <Projects />
+      <Gallery />
       <Footer />
     </>
   );

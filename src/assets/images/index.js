@@ -7,6 +7,8 @@ import planning from './planning.svg';
 import eac from './eac.png';
 import bank from './transnational bank.png';
 import hub from './lawyers hub.png';
+import gallery from './gallery.png';
+import largeDots from './6x2 dots large.png';
 
 export const images = {
   INTERIOR: interior,
@@ -18,4 +20,6 @@ export const images = {
   EAC: eac,
   BANK: bank,
   HUB: hub,
+  GALLERY: gallery,
+  LARGEDOTS: largeDots,
 };
