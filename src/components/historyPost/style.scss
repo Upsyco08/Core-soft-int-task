@@ -1,0 +1,17 @@
+.history-post{
+    &__title{
+        width: 310px; 
+        color: #E2B84C;
+        text-align: right; 
+        border-bottom: 1px solid #E2B84C; 
+        line-height: 1px;
+        margin: 0px 0 20px 112px; 
+        font-size: 16px;
+        font-weight: 400;
+        
+        span{
+            background:#fff; 
+            padding:0 12px; 
+        }
+    }
+}

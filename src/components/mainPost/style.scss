@@ -11,7 +11,10 @@
     
     &__title {
       display: flex;
-      height: 130px;
+      margin: 0px;
+      margin-left:12px;
+      padding: 0px;
+      height: 60px;
       font-size: 50px;
       line-height: 60px;
       color: #534847;
@@ -21,6 +24,8 @@
 
       &--yellow{
         color:#E2B84C;
+        padding-left: 12px;
+        padding-right: 12px;
       }
     }    
 
@@ -39,22 +44,19 @@
     }
       &__description-extend {
         margin-left: 12px;
-        font-size: 16px;
-        line-height: 24px;
-        width: 428px;
-        height: 120px;
+        font-size: 14px;
+        width: 112px;
         color:#E2B84C;
-        display: flex;
+        line-height: 1px;
+        font-weight: 400;
+        border-bottom: 1px solid #E2B84C;
+        text-align:right;
+        cursor: pointer;
 
-      &__line{
-        width: 25px;
-        height: 1px;
-        border: 0px;
-        margin: 0px;
-        padding: 0px;
-        background-color: #E2B84C;
-      }
-
+        span{
+          background: #fff;
+          padding: 0 10px;
+        }
       }
     }
 
@@ -72,8 +74,20 @@
     right:0;
     top: 688px;
     background-color: white;
-    padding:  30px 125px 30px 95px;
+    padding:  33px 125px 30px 95px;
     color: black;
     font-size: 16px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .big-circle{
+    position: absolute;
+    left: -51px;
+    top:39px;
+  }
+  .dots{
+    position: absolute;
+    left: 20px;
+    top: 526px;
   }
 }
