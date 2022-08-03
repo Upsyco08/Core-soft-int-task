@@ -1,26 +1,25 @@
 import React from 'react';
-import { images } from '../../assets/images';
+import { projectPosts } from '../../constants/projects';
+import { ProjectPost } from '../common/projectPost';
 
 import './style.scss';
 
 export function Projects() {
-  const { HUB, EAC, BANK } = images;
   return (
     <div className='project-wrapper'>
       <h2 className='project__title'>Our Latest Projects</h2>
       <div className='content'>
-        <div className='project'>
-          <img src={HUB} alt='Laywers Hub' />
-          <p>Lawyes Hub kenya</p>
-        </div>
-        <div className='project'>
-          <img src={EAC} alt='EAC Arusha' />
-          <p>E.A.C Arusha</p>
-        </div>
-        <div className='project'>
-          <img src={BANK} alt='Transnational Bank' />
-          <p>Transnational Bank</p>
-        </div>
+        {projectPosts.map(
+          ({ projectClass, image, imageDescription, projectName }) => (
+            <ProjectPost
+              key={projectClass}
+              projectClass={projectClass}
+              image={image}
+              imageDescription={imageDescription}
+              projectName={projectName}
+            />
+          )
+        )}
       </div>
     </div>
   );
