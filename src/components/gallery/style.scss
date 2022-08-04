@@ -70,3 +70,57 @@
     bottom: 190px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .gallery-rectangle {
+    max-width: 100%;
+    background-color: white;
+    align-items: center;
+    height: auto;
+
+    .gallery-wrapper {
+      align-items: start;
+
+      .gallery-information {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 0px;
+      }
+
+      .gallery {
+        &__title {
+          h1 {
+            font-size: 20px;
+            text-align: center;
+            line-height: 25px;
+            margin: 20px 0px;
+          }
+
+          p {
+            font-size: 12px;
+            width: auto;
+
+            span {
+              background-color: white;
+            }
+          }
+        }
+
+        &__description {
+          max-width: 80%;
+          font-size: 10px;
+          text-align: center;
+          margin: 5%;
+        }
+
+        &__image {
+          width: 100%;
+        }
+      }
+    }
+    .dots {
+      display: none;
+    }
+  }
+}
