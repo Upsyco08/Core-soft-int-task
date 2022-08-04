@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { images } from '../../assets/images';
 
 import { footerTitle, links, navbarLabel } from '../../constants';
@@ -6,7 +6,6 @@ import { footerTitle, links, navbarLabel } from '../../constants';
 import './style.scss';
 
 export function Footer() {
-  const [emailValue, setEmailValue] = useState('your.address@email.com');
   const { facebook, twitter, instagram, videocam } = links;
   const { FACEBOOKICON, TWITTERICON, INSTAGRAMICON, VIDEOCAMICON } = images;
   const { HOME, ABOUT, CONTACT, SERVICES } = navbarLabel;
@@ -18,6 +17,7 @@ export function Footer() {
     FOLLOW_US,
     COPYRIGHT,
   } = footerTitle;
+
   return (
     <div className='footer-wrapper'>
       <div className='footer'>
@@ -31,7 +31,7 @@ export function Footer() {
           <h1>{NEWSLETTER}</h1>
           <p>{OFFERS}</p>
           <form className='form'>
-            <input type='email' email='email' value={emailValue} />
+            <input type='email' email='email' value='your.address@email.com' />
             <input type='submit' value='Subscribe' />
           </form>
         </div>
@@ -61,10 +61,10 @@ export function Footer() {
       <p className='footer-copyright'>{COPYRIGHT}</p>
       <div className='footer-navigation'>
         <ul>
-          <li>{HOME}</li>
-          <li>{ABOUT}</li>
-          <li>{CONTACT}</li>
-          <li>{SERVICES}</li>
+          <a href='/'>{HOME}</a>
+          <a href='/about'>{ABOUT}</a>
+          <a href='/contact'>{CONTACT}</a>
+          <a href='/services'>{SERVICES}</a>
         </ul>
       </div>
     </div>

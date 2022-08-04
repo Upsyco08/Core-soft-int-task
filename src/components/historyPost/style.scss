@@ -5,7 +5,8 @@
   justify-content: space-between;
 
   .title {
-    width: 340px;
+    width: 24%;
+
     h2 {
       font-family: 'Raleway';
       font-size: 40px;
@@ -46,7 +47,6 @@
       width: 112px;
       font-size: 16px;
       color: #e2b84c;
-      font-weight: 400;
     }
   }
 
@@ -60,5 +60,51 @@
     position: absolute;
     left: -126px;
     top: 358px;
+  }
+}
+
+//mobile
+@media screen and (max-width: 450px) {
+  .history-post {
+    margin: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      width: 60%;
+      h2 {
+        font-size: 25px;
+        text-align: center;
+        line-height: 25px;
+      }
+
+      &__support-text {
+        width: 100%;
+        font-size: 12px;
+        border: none;
+        text-align: center;
+      }
+    }
+
+    .description {
+      margin: 0px;
+      width: 100%;
+      p {
+        text-align: center;
+        padding: 20px;
+        font-size: 10px;
+      }
+      &__author {
+        font-size: 12px;
+      }
+    }
+
+    .small-circle {
+      display: none;
+    }
+
+    .dots {
+      display: none;
+    }
   }
 }

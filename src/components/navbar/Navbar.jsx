@@ -9,14 +9,15 @@ export function Navbar() {
 
   return (
     <div className='navbar'>
-        <ul>
-          <li>{HOME}</li>
-          <li>{ABOUT}</li>
-          <li>{CONTACT}</li>
-          <li>{SERVICES}</li>
-          <li className='quote'>{QUOTE}</li>
-        </ul>
+      <ul>
+        <a href='/'>{HOME}</a>
+        <a href='/about'>{ABOUT}</a>
+        <a href='/contact'>{CONTACT}</a>
+        <a href='/services'>{SERVICES}</a>
+        <a className='quote' href='/login'>
+          {QUOTE}
+        </a>
+      </ul>
     </div>
   );
 }
-
