@@ -163,7 +163,7 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 780px) {
+@media screen and (min-width: 450px) and (max-width: 790px) {
   .main-post {
     height: auto;
 
@@ -209,4 +209,27 @@
       top: 200px;
     }
   }
-} ;
+}
+
+@media screen and (min-width: 789px) and (max-width: 1150px) {
+  .main-post {
+    height: auto;
+
+    .information {
+      &__title {
+        h1 {
+          font-size: 33px;
+          line-height: 40px;
+          height: 50px;
+        }
+
+        h2 {
+          font-size: 33px;
+          line-height: 40px;
+          height: 50px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -19,7 +19,7 @@ export const serviceCards = [
     serviceClass: 'service',
     image: images.PLANNING,
     imageDescription: 'interior planning',
-    serviceTopic: 'interior & space planing',
+    serviceTopic: 'Interior & Space Planning',
     serviceDescription: 'Lorem ipsum dolor sit amet consect etur.',
   },
 ];

@@ -57,7 +57,7 @@
 }
 
 //Tablet screen
-@media screen and (min-width: 450px) and (max-width: 780px) {
+@media screen and (min-width: 450px) and (max-width: 790px) {
   .navbar {
     margin: 0 10%;
     height: 100px;
@@ -71,6 +71,20 @@
       }
       .quote {
         font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 790px) and (max-width: 1150px) {
+  .navbar {
+    ul {
+      width: 50%;
+      a {
+        font-size: 14px;
+      }
+      .quote {
+        font-size: 14px;
       }
     }
   }

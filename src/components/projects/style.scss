@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 780px) {
+@media screen and (min-width: 450px) and (max-width: 790px) {
   .project-wrapper {
     margin: 20px 0px 0px 0px;
 
@@ -87,6 +87,16 @@
 
       img {
         margin: 0px 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 790px) and (max-width: 1150px) {
+  .project-wrapper {
+    .project {
+      &__title {
+        font-size: 28px;
       }
     }
   }

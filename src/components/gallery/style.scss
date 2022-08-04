@@ -126,7 +126,7 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 780px) {
+@media screen and (min-width: 450px) and (max-width: 790px) {
   .gallery-rectangle {
     max-width: 100%;
     height: auto;
@@ -174,5 +174,33 @@
 
   .dots {
     display: none;
+  }
+}
+
+@media screen and (min-width: 790px) and (max-width: 1150px) {
+  .gallery-rectangle {
+    height: auto;
+
+    .gallery-wrapper {
+      .gallery {
+        &__title {
+          h1 {
+            font-size: 28px;
+            line-height: 30px;
+            margin-bottom: 30px;
+          }
+        }
+        &__description {
+          font-size: 14px;
+        }
+
+        &__image {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+  .dots {
+    transform: scale(0.7);
   }
 }

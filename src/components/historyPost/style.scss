@@ -87,6 +87,10 @@
         font-size: 12px;
         border: none;
         text-align: center;
+
+        .dash {
+          display: none;
+        }
       }
     }
 
@@ -113,7 +117,7 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 780px) {
+@media screen and (min-width: 450px) and (max-width: 790px) {
   .history-post {
     margin: 100px 0px;
     flex-direction: column;
@@ -132,6 +136,10 @@
         border: 0px;
         text-align: center;
         font-size: 16px;
+
+        .dash {
+          display: none;
+        }
       }
     }
     .description {
@@ -154,6 +162,46 @@
 
     .dots {
       display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 790px) and (max-width: 1150px) {
+  .history-post {
+    margin: 150px 100px;
+
+    .title {
+      width: 50%;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      &__support-text {
+        width: auto;
+        border: 0px;
+        margin-right: 20px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .description {
+      margin: 20px 0px 20px 50px;
+      width: 100%;
+
+      p {
+        padding: 20px 0px;
+        font-size: 13px;
+      }
+
+      &__author {
+        font-size: 13px;
+      }
+    }
+    .dots {
+      left: -80px;
+      top: 258px;
     }
   }
 }
