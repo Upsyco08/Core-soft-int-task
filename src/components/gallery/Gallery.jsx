@@ -1,32 +1,40 @@
 import React from 'react';
-
-import { images } from '../../assets/images';
+import { galleryPosts } from '../../constants';
 
 import './style.scss';
 
 export function Gallery() {
-  const { GALLERY, LARGEDOTS } = images;
+  const {
+    TITLE,
+    SUPPORT_TEXT,
+    DESCRIPTION,
+    GALLERY,
+    GALLERY_DESCRIPTION,
+    LARGEDOTS,
+    LARGEDOTS_DESCRIPTION,
+  } = galleryPosts;
   return (
     <>
       <div className='gallery-rectangle'>
         <div className='gallery-wrapper'>
           <div className='gallery-information'>
             <div className='gallery__title'>
-              <h1>Our Gallery</h1>
+              <h1>{TITLE}</h1>
               <p>
-                <span>Quality design at the fairest price</span>
+                <span>{SUPPORT_TEXT}</span>
               </p>
             </div>
             <div className='gallery__description'>
-              <p>
-                Lorem ipsum dolor sit amet consect etur adipiscing elit sed do
-                eiusmo. There are many variations.
-              </p>
+              <p>{DESCRIPTION}</p>
             </div>
           </div>
-          <img className='gallery__image' src={GALLERY} alt='gallery' />
+          <img
+            className='gallery__image'
+            src={GALLERY}
+            alt={GALLERY_DESCRIPTION}
+          />
         </div>
-        <img className='dots' src={LARGEDOTS} alt='6x2 dots large' />
+        <img className='dots' src={LARGEDOTS} alt={LARGEDOTS_DESCRIPTION} />
       </div>
     </>
   );

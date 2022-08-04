@@ -3,13 +3,12 @@
   .post1 {
     display: flex;
     position: relative;
-    justify-content: flex-start;
+    justify-content: space-between;
     .image {
       width: 48%;
-      height: auto;
     }
     .details {
-      margin-left: 128px;
+      width: 45%;
       &__title {
         font-family: 'Raleway';
         font-size: 40px;
@@ -54,11 +53,12 @@
     justify-content: space-between;
     .image {
       width: 49%;
-      height: 500px;
       margin-bottom: 130px;
     }
     .details {
-      margin: 75px 40px 0px 110px;
+      margin-left: 8%;
+      margin-top: 5%;
+      width: 40%;
       &__title {
         font-family: 'Raleway';
         font-size: 40px;
@@ -70,7 +70,6 @@
       &__description {
         margin-top: 47px;
         color: #8d8180;
-        width: 531px;
       }
       &__button {
         margin-top: 90px;

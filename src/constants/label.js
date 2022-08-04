@@ -15,3 +15,11 @@ export const footerTitle = {
   OFFERS: 'Stay updated with our lates offers',
   COPYRIGHT: '© BuildMax Limited | All Rights Reserved. | 2019',
 };
+
+export const serviceTitle = {
+  TITLE: 'We Provide Below Services.',
+};
+
+export const projectTitle = {
+  TITLE: 'Our Latest Projects',
+};

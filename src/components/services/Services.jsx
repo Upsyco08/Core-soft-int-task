@@ -1,14 +1,15 @@
 import React from 'react';
 
-import { serviceCards } from '../../constants';
 import { ServiceCard } from '../common/serviceCard';
+import { serviceCards, serviceTitle } from '../../constants';
 
 import './style.scss';
 
 export function Services() {
+  const { TITLE } = serviceTitle;
   return (
     <div className='service-wrapper'>
-      <h2 className='service-wrapper__title'>We Provide Below Services.</h2>
+      <h2 className='service-wrapper__title'>{TITLE}</h2>
       <div className='content'>
         {serviceCards.map(
           ({

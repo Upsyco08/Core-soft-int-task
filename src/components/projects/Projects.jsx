@@ -1,13 +1,15 @@
 import React from 'react';
-import { projectPosts } from '../../constants/projects';
+
 import { ProjectPost } from '../common/projectPost';
+import { projectTitle, projectPosts } from '../../constants';
 
 import './style.scss';
 
 export function Projects() {
+  const { TITLE } = projectTitle;
   return (
     <div className='project-wrapper'>
-      <h2 className='project__title'>Our Latest Projects</h2>
+      <h2 className='project__title'>{TITLE}</h2>
       <div className='content'>
         {projectPosts.map(
           ({ projectClass, image, imageDescription, projectName }) => (
