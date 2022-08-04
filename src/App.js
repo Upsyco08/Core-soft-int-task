@@ -8,6 +8,7 @@ import { AboutPost } from './components/aboutPost';
 import { Services } from './components/services';
 import { Projects } from './components/projects';
 import { Gallery } from './components/gallery/Gallery';
+import { DashLine } from './components/common/dashLine';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Projects />
       <Gallery />
       <Footer />
+      <DashLine />
     </div>
   );
 }

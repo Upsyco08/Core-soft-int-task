@@ -27,7 +27,7 @@
       line-height: 15px;
       font-weight: 700;
       padding: 12px 56px 11px 11px;
-      bottom: 0px;
+      bottom: 7px;
       left: 0;
     }
     img {
@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
   .project-wrapper {
     margin: 0;
 
@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 450px) and (max-width: 768px) {
   .project-wrapper {
     margin: 20px 0px 0px 0px;
 

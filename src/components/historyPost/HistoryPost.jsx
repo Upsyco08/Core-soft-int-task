@@ -20,9 +20,10 @@ export function HistoryPost() {
     <div className='history-post'>
       <div className='title'>
         <h2>{TITLE}</h2>
-        <p className='title__support-text'>
-          <span>{SUPPORT_TEXT}</span>
-        </p>
+        <div className='title__support-text'>
+          <div className='dash' />
+          <p>{SUPPORT_TEXT}</p>
+        </div>
       </div>
       <div className='description'>
         <p>{DESCRIPTION1}</p>

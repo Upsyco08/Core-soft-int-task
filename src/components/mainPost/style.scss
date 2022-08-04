@@ -88,6 +88,7 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    cursor: pointer;
   }
 
   .big-circle {
@@ -104,7 +105,7 @@
 }
 
 //mobile screen
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
   .main-post {
     flex-direction: column;
     align-self: center;
@@ -162,7 +163,7 @@
   }
 }
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 450px) and (max-width: 768px) {
   .main-post {
     height: auto;
 
