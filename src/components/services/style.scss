@@ -86,14 +86,17 @@
     margin: 0px;
 
     &__title {
+      margin: 50px 0;
       font-size: 25px;
       width: 100%;
     }
 
     .content {
       .service {
+        width: 90%;
         h3 {
           font-size: 14px;
+          width: 100%;
         }
 
         p {

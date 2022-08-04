@@ -132,6 +132,8 @@
     }
     .description {
       margin: 20px 0px;
+      width: 90%;
+      text-align: center;
 
       p {
         padding: 20px 0px;
@@ -141,14 +143,13 @@
       &__author {
         font-size: 14px;
       }
+    }
+    .small-circle {
+      display: none;
+    }
 
-      .small-circle {
-        display: none;
-      }
-
-      .dots {
-        display: none;
-      }
+    .dots {
+      display: none;
     }
   }
 }

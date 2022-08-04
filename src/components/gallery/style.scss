@@ -77,6 +77,7 @@
     background-color: white;
     align-items: center;
     height: auto;
+    margin-bottom: 60px;
 
     .gallery-wrapper {
       align-items: start;
@@ -122,5 +123,56 @@
     .dots {
       display: none;
     }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .gallery-rectangle {
+    max-width: 100%;
+    height: auto;
+
+    .gallery-wrapper {
+      align-items: center;
+
+      .gallery-information {
+        width: 90%;
+        margin: 20px 0px;
+      }
+
+      .gallery {
+        &__title {
+          h1 {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 30px;
+          }
+
+          p {
+            width: 80%;
+            height: auto;
+            font-size: 14px;
+            text-align: left;
+            border: none;
+            line-height: 16px;
+            span {
+              background: transparent;
+              padding: 0px;
+            }
+          }
+        }
+        &__description {
+          font-size: 12px;
+          margin: 50px 30px;
+        }
+
+        &__image {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .dots {
+    display: none;
   }
 }
