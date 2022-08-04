@@ -28,7 +28,7 @@ export function MainPost() {
             {TITLE_TEXT1}
             <span>{TITLE_TEXT2}</span> {TITLE_TEXT3}
           </h1>
-          <h1>{TITLE_TEXT4}</h1>
+          <h2>{TITLE_TEXT4}</h2>
         </div>
         <p className='information__description'>{DESCRIPTION}</p>
         <div className='information__action'>

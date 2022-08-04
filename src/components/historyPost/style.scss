@@ -64,7 +64,7 @@
 }
 
 //mobile
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 425px) {
   .history-post {
     margin: 20px 0px;
     flex-direction: column;
@@ -105,6 +105,50 @@
 
     .dots {
       display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .history-post {
+    margin: 100px 0px;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      width: 100%;
+
+      h2 {
+        text-align: center;
+        font-size: 25px;
+      }
+
+      &__support-text {
+        width: auto;
+        border: 0px;
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+    .description {
+      margin: 20px 0px;
+
+      p {
+        padding: 20px 0px;
+        font-size: 14px;
+      }
+
+      &__author {
+        font-size: 14px;
+      }
+
+      .small-circle {
+        display: none;
+      }
+
+      .dots {
+        display: none;
+      }
     }
   }
 }

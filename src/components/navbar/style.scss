@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: flex-end;
+  margin-right: 11%;
   height: 138px;
 
   ul {
@@ -37,10 +38,29 @@
 }
 
 //mobile screen
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 425px) {
   .navbar {
-    margin: 10%;
+    margin: 5%;
     height: auto;
+
+    ul {
+      width: 100%;
+
+      a {
+        font-size: 12px;
+      }
+      .quote {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+//Tablet screen
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .navbar {
+    margin: 0 10%;
+    height: 100px;
     width: 80%;
 
     ul {

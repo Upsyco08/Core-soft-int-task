@@ -11,7 +11,7 @@ import { Gallery } from './components/gallery/Gallery';
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <MainPost />
       <HistoryPost />
@@ -20,7 +20,7 @@ function App() {
       <Projects />
       <Gallery />
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -1,5 +1,5 @@
 .main-post {
-  height: 773px;
+  height: auto;
   width: 100%;
   position: relative;
   display: flex;
@@ -12,7 +12,7 @@
     &__title {
       h1 {
         display: flex;
-        margin: 0px;
+        margin-top: 60px;
         height: 60px;
         width: 95%;
         font-size: 50px;
@@ -26,6 +26,17 @@
           padding-left: 12px;
           padding-right: 12px;
         }
+      }
+      h2 {
+        display: flex;
+        margin-bottom: 60px;
+        height: 35px;
+        width: 95%;
+        font-size: 50px;
+        line-height: 60px;
+        color: #534847;
+        font-weight: 600;
+        white-space: nowrap;
       }
     }
 
@@ -44,7 +55,6 @@
 
     &__action {
       width: 112px;
-      margin-left: 12px;
       font-size: 14px;
       color: #e2b84c;
       line-height: 1px;
@@ -94,7 +104,7 @@
 }
 
 //mobile screen
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 425px) {
   .main-post {
     flex-direction: column;
     align-self: center;
@@ -108,6 +118,13 @@
 
       &__title {
         h1 {
+          font-size: 25px;
+          height: 40px;
+          line-height: 10px;
+          margin: 0px;
+        }
+        h2 {
+          margin: 0px;
           font-size: 25px;
           height: 40px;
           line-height: 10px;
@@ -125,6 +142,7 @@
       &__action {
         width: auto;
         font-size: 10px;
+        margin-bottom: 30px;
       }
     }
     &__image {
@@ -143,3 +161,51 @@
     }
   }
 }
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .main-post {
+    height: auto;
+
+    .information {
+      &__title {
+        h1 {
+          font-size: 25px;
+          line-height: 40px;
+          height: auto;
+        }
+
+        h2 {
+          font-size: 25px;
+          line-height: 40px;
+          height: auto;
+          margin-bottom: 20px;
+        }
+      }
+
+      &__description {
+        font-size: 14px;
+      }
+
+      &__action {
+        margin-top: 60px;
+        margin-left: 0;
+      }
+    }
+
+    &__image {
+      width: 30%;
+    }
+
+    &__button {
+      font-size: 12px;
+    }
+    .big-circle {
+      transform: scale(0.5);
+    }
+    .dots {
+      transform: scale(0.5);
+      left: 0px;
+      top: 200px;
+    }
+  }
+} ;
