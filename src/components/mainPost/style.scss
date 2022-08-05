@@ -62,6 +62,11 @@
       border-bottom: 1px solid #e2b84c;
       text-align: right;
       cursor: pointer;
+      transition: all 0.5s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       span {
         background: #fff;
@@ -89,6 +94,11 @@
     justify-content: center;
     background-color: white;
     cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
   }
 
   .big-circle {

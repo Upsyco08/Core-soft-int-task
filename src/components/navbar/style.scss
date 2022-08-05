@@ -18,20 +18,32 @@
       line-height: 24px;
       text-decoration: none;
       color: #000000;
+      transition: all 0.5s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
+
     .quote {
-      padding: 6px 10px 8px 10px;
+      height: 30px;
+      width: 120px;
+      line-height: 30px;
       background-color: #e6a859;
       color: white;
       font-size: 16px;
       line-height: 24px;
       font-weight: 400;
+      transition: all 0.5s ease;
+      text-align: center;
+      padding-top: 6px;
+      box-shadow: 3px 3px #ccc;
 
       &:hover {
+        transform: scale(1.05);
         border: solid 1px #e6a859;
         background-color: white;
         color: #e6a859;
-        padding: 5px 9px 7px 9px;
       }
     }
   }
@@ -51,6 +63,10 @@
       }
       .quote {
         font-size: 12px;
+        height: auto;
+        width: auto;
+        padding: 1px 5px;
+        box-shadow: 2px 2px #ccc;
       }
     }
   }

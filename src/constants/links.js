@@ -5,11 +5,11 @@ export const links = {
   },
   twitter: {
     LINK: 'www.twitter.com',
-    LABEL: 'buildmax_ke',
+    LABEL: 'Buildmax_ke',
   },
   instagram: {
     LINK: 'www.instagram.com',
-    LABEL: 'buildmax_ltd',
+    LABEL: 'Buildmax_ltd',
   },
   videocam: {
     LINK: 'www.buildmax.com',

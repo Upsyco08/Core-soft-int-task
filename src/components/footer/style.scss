@@ -60,6 +60,7 @@
           height: 47px;
           background-color: #e6a859;
           color: white;
+          transition: all 0.5s ease;
           cursor: pointer;
 
           &:hover {
@@ -98,6 +99,11 @@
           a {
             color: white;
             text-decoration: none;
+            transition: all 0.3s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
           }
         }
       }
@@ -205,7 +211,7 @@
         align-items: center;
 
         .link {
-          width: 45%;
+          width: 53%;
           margin: 1% 0;
           transform: scale(0.8);
         }

@@ -33,6 +33,8 @@
         background-color: #e6a859;
         padding: 12px 1px;
         width: 220px;
+        box-shadow: 3px 3px #ccc;
+        transition: all 0.5s ease;
 
         &:hover {
           padding: 11px 0px;
@@ -58,14 +60,17 @@
     flex-direction: row-reverse;
     position: relative;
     justify-content: space-between;
+
     .image {
       width: 49%;
       margin-bottom: 130px;
     }
+
     .details {
       margin-left: 8%;
       margin-top: 5%;
       width: 40%;
+
       &__title {
         font-family: 'Raleway';
         font-size: 40px;
@@ -74,10 +79,12 @@
         font-weight: 700;
         color: #534847;
       }
+
       &__description {
         margin-top: 47px;
         color: #8d8180;
       }
+
       &__button {
         margin-top: 90px;
         color: white;
@@ -85,6 +92,9 @@
         background-color: #e6a859;
         padding: 12px 0px 11px 0px;
         width: 220px;
+        box-shadow: 3px 3px #ccc;
+        transition: all 0.5s ease;
+
         &:hover {
           padding: 11px -1px 10px -1px;
           background-color: white;
@@ -94,6 +104,7 @@
         }
       }
     }
+
     .background {
       position: absolute;
       z-index: -1;
@@ -215,6 +226,7 @@
 
         &__description {
           margin: 10px 20px;
+          text-align: center;
         }
 
         &__button {
@@ -258,6 +270,7 @@
 
         &__description {
           margin: 10px 20px;
+          text-align: center;
         }
 
         &__button {
